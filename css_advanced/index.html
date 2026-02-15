@@ -3,151 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Advanced HTML Structure - Project</title>
+    <title>SmileSchool</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <header>
-        <div class="header-container">
-            <a href="index.html">
-                <img src="images/logo.png" alt="Company Logo">
-            </a>
-            
-            <nav>
-                <a href="#courses">Courses</a>
-                <a href="#pricing">Pricing</a>
-                <a href="#login">Login</a>
-            </nav>
+    <header class="hero">
+        <nav class="navbar">
+            <div class="logo">SmileSchool</div>
+            <ul class="nav-links">
+                <li>COURSES</li>
+                <li>PRICING</li>
+                <li>LOGIN</li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <h1>Get schooled</h1>
+            <p class="hero-tags">SMILES &nbsp;&nbsp; GRIN &nbsp;&nbsp; LAUGH</p>
+            <button class="btn-main">REGISTER FOR FREE</button>
+            <h2 class="learn-title"><span>Learn</span> from the pros</h2>
+            <div class="pros-grid">
+                <div class="pro-card">
+                    <img src="img/1.png" alt="Phillip">
+                    <h3>Phillip Massey</h3>
+                    <p><em>« Smile of the year »</em><br>2018 - 2019</p>
+                </div>
+                <div class="pro-card">
+                    <img src="img/3.png" alt="Nannie">
+                    <h3>Nannie Lawrence</h3>
+                    <p><em>« Best « little smile »</em><br>2017</p>
+                </div>
+                <div class="pro-card">
+                    <img src="img/2.png" alt="Bruce">
+                    <h3>Bruce Walters</h3>
+                    <p><em>« Best « Friend Smile »</em><br>live performance 2019</p>
+                </div>
+                <div class="pro-card">
+                    <img src="img/4.png" alt="Henry">
+                    <h3>Henry Hughes</h3>
+                    <p><em>« 24h smiles » winner</em><br>2016 - 2019</p>
+                </div>
+            </div>
         </div>
     </header>
 
-    <main>
-        <section class="banner">
-            <div class="hero-text">
-                <h1>Learn from the best, anywhere</h1>
-                <p>Access high-quality video tutorials and community support.</p>
-                <button type="button">Get Started</button>
-            </div>
-
-            <div class="features">
-                <h2>Why choose us?</h2>
-                <div class="features-grid">
-                    <div class="feature-item">
-                        <img src="images/icon-1.png" alt="Expertise Icon">
-                        <h3>Expert Tutors</h3>
-                        <p>Learn from industry professionals.</p>
-                    </div>
-                    <div class="feature-item">
-                        <img src="images/icon-2.png" alt="Flexibility Icon">
-                        <h3>Flexible Schedule</h3>
-                        <p>Watch videos at your own pace.</p>
-                    </div>
-                    <div class="feature-item">
-                        <img src="images/icon-3.png" alt="Community Icon">
-                        <h3>Community</h3>
-                        <p>Join thousands of students worldwide.</p>
-                    </div>
-                    <div class="feature-item">
-                        <img src="images/icon-4.png" alt="Certificate Icon">
-                        <h3>Certification</h3>
-                        <p>Receive certificates upon completion.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="quote">
-            <div class="quote-content">
-                <img src="images/quote-mark.png" alt="Quote Decoration">
-                <div class="quote-body">
-                    <blockquote>
-                        "This platform completely changed how I approach coding. The videos are clear and easy to follow."
-                    </blockquote>
-                    <p class="author-name"><strong>Jane Doe</strong></p>
-                    <p class="author-title">Senior Web Developer</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="videos">
-            <h2>Popular Videos</h2>
-            <div class="video-grid">
-                <div class="video-card">
-                    <img src="images/video-1.png" alt="Video Thumbnail">
-                    <h3>Intro to JavaScript</h3>
-                    <p>Master the basics of JS in 20 minutes.</p>
-                    
-                    <div class="video-author">
-                        <img src="images/profile-1.png" alt="Instructor 1">
-                        <h3>Phillip Morris</h3>
-                    </div>
-                    
-                    <div class="rating-block">
-                        <div class="stars">
-                            <img src="images/star.png" alt="Star">
-                            <img src="images/star.png" alt="Star">
-                            <img src="images/star.png" alt="Star">
-                            <img src="images/star.png" alt="Star">
-                            <img src="images/star-off.png" alt="Empty Star">
-                        </div>
-                        <p>8k views</p>
-                    </div>
-                </div>
-                </div>
-        </section>
-
-        <section class="membership">
-            <h2>Choose Your Plan</h2>
-            <div class="membership-list">
-                <div class="membership-item">
-                    <img src="images/member-icon.png" alt="Free Tier">
-                    <h3>Free Tier</h3>
-                    <p>Access to public videos only.</p>
-                    <button>Sign Up Free</button>
-                </div>
-                </div>
-        </section>
-
-        <section class="faq">
-            <div class="faq-layout">
-                <div class="faq-row">
-                    <div class="faq-item">
-                        <h3>Is there a free trial?</h3>
-                        <p>Yes, you can access a selection of videos for free.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h3>Can I cancel anytime?</h3>
-                        <p>Of course, there are no long-term contracts.</p>
-                    </div>
-                </div>
-                <div class="faq-row">
-                    <div class="faq-item">
-                        <h3>Are the videos offline?</h3>
-                        <p>Members can download videos for offline viewing.</p>
-                    </div>
-                    <div class="faq-item">
-                        <h3>Do I get a certificate?</h3>
-                        <p>Every course includes a unique completion certificate.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-global">
-            <div class="footer-row">
-                <img src="images/footer-logo.png" alt="Footer Logo">
-                
-                <div class="footer-links">
-                    <a href="#"><img src="images/fb-icon.png" alt="Facebook"></a>
-                    <a href="#"><img src="images/tw-icon.png" alt="Twitter"></a>
-                    <a href="#"><img src="images/ig-icon.png" alt="Instagram"></a>
-                </div>
-                
-                <p>&copy; 2026 Your Course App. All rights reserved.</p>
+    <section class="testimonial">
+        <div class="container">
+            <img src="img/5.png" alt="Person" class="testimonial-img">
+            <div class="testimonial-text">
+                <p>« Those tutorials are concise and go straight to the point. I can’t think of a better place to learn smiling. And it’s so fun!</p>
+                <p><strong>Person Name</strong><br><em>weather presenter</em></p>
             </div>
         </div>
+    </section>
+
+    <section class="tutorials">
+        <h2>Most <span>popular</span> tutorials</h2>
+        <div class="tutorial-grid">
+            <div class="v-card">
+                <div class="video-preview"><div class="play-icon"><img src="img/play.png"></div></div>
+                <h3>Diagonal Smile</h3>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="card-footer">
+                    <img src="img/9.png" class="small-avatar"> <span>Phillip Massey</span>
+                </div>
+            </div>
+            </div>
+    </section>
+
+    <section class="membership">
+        <h2><span>Free</span> membership</h2>
+        <div class="membership-grid">
+            <div class="m-item"><i>☺</i> <h3>Lorem ipsum</h3> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+            <div class="m-item"><i>☺</i> <h3>Lorem ipsum</h3> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+            <div class="m-item"><i>☺</i> <h3>Lorem ipsum</h3> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+            <div class="m-item"><i>☺</i> <h3>Lorem ipsum</h3> <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+        </div>
+        <button class="btn-main">REGISTER FOR FREE</button>
+    </section>
+
+    <section class="faq">
+        <h2>F.A.Q.</h2>
+        <div class="faq-grid">
+            <div class="faq-item">
+                <h3>How does this work?</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How does this work?</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="logo">SmileSchool</div>
+            <div class="socials"><span>f</span> <span>t</span> <span>i</span></div>
+        </div>
+        <p>©smileschool 2026</p>
     </footer>
 
 </body>
