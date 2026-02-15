@@ -1,0 +1,133 @@
+/* 1. RESET & VARIABLES */
+:root {
+    --color-primary: #ff555e; /* Red/Coral CTA color */
+    --color-white: #ffffff;
+    --color-dark: #071629;
+    --font-main: 'Source Sans Pro', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    line-height: 1.5;
+    color: var(--color-white);
+}
+
+/* 2. GENERIC SELECTORS */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.btn-cta {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    padding: 15px 40px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 30px 0;
+    transition: opacity 0.3s;
+}
+
+.btn-cta:hover {
+    opacity: 0.9;
+}
+
+/* 3. HERO SECTION (Mobile First) */
+.hero {
+    min-height: 100vh;
+    background: linear-gradient(rgba(7, 22, 41, 0.4), rgba(7, 22, 41, 0.4)), 
+                url('hero-bg.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* 4. NAVBAR (Mobile) */
+.navbar {
+    display: flex;
+    justify-content: center; /* Center logo on mobile */
+    align-items: center;
+    position: relative;
+}
+
+.nav-links {
+    display: none; /* Hidden on mobile by default */
+}
+
+.nav-icon {
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+}
+
+.nav-icon span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: var(--color-white);
+    margin: 5px 0;
+}
+
+/* 5. HERO TEXT (Mobile) */
+.hero-content {
+    margin-top: 15vh;
+}
+
+.hero-content h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.hero-content .hero-subtitle {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.hero-description {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/* 6. DESKTOP ADAPTATIONS */
+@media (min-width: 768px) {
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .nav-icon {
+        display: none; /* Hide hamburger on desktop */
+    }
+
+    .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+    }
+
+    .nav-links a {
+        color: var(--color-white);
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .hero-content h1 {
+        font-size: 48px;
+    }
+
+    .hero-description {
+        max-width: 600px;
+        margin: 40px auto;
+    }
+}

@@ -1,0 +1,499 @@
+/* Icon Font Styles */
+@font-face {
+  font-family: 'holberton_school-icon';
+  src:  url('fonts/holberton_school-icon.eot');
+  src:  url('fonts/holberton_school-icon.eot?#iefix') format('embedded-opentype'),
+    url('fonts/holberton_school-icon.ttf') format('truetype'),
+    url('fonts/holberton_school-icon.woff') format('woff'),
+    url('fonts/holberton_school-icon.svg#holberton_school-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="holberton_school-icon-"], [class*=" holberton_school-icon-"] {
+  font-family: 'holberton_school-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.holberton_school-icon-arrow_1:before { content: "\e900"; }
+.holberton_school-icon-arrow_2:before { content: "\e901"; }
+.holberton_school-icon-arrow_3:before { content: "\e902"; }
+.holberton_school-icon-arrow_4:before { content: "\e903"; }
+.holberton_school-icon-arrow_5:before { content: "\e904"; }
+.holberton_school-icon-check:before { content: "\e905"; }
+.holberton_school-icon-ic_bag:before { content: "\e906"; }
+.holberton_school-icon-ic_cart:before { content: "\e907"; }
+.holberton_school-icon-ic_facebook:before { content: "\e908"; }
+.holberton_school-icon-ic_hearing:before { content: "\e909"; }
+.holberton_school-icon-ic_instagram:before { content: "\e90a"; }
+.holberton_school-icon-ic_laptop:before { content: "\e90b"; }
+.holberton_school-icon-ic_money:before { content: "\e90c"; }
+.holberton_school-icon-ic_music:before { content: "\e90d"; }
+.holberton_school-icon-ic_sound:before { content: "\e90e"; }
+.holberton_school-icon-ic_twitter:before { content: "\e90f"; }
+.holberton_school-icon-ic_video:before { content: "\e910"; }
+.holberton_school-icon-menu:before { content: "\e911"; }
+.holberton_school-icon-search_1:before { content: "\e912"; }
+.holberton_school-icon-search_2:before { content: "\e913"; }
+.holberton_school-icon-star:before { content: "\e914"; }
+
+/* Existing styles from 0-styles.css */
+:root {
+    --color-primary: #ff555e; /* Red/Coral CTA color */
+    --color-white: #ffffff;
+    --color-dark: #071629;
+    --font-main: 'Source Sans Pro', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    line-height: 1.5;
+    color: var(--color-white);
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.btn-cta {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    padding: 15px 40px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 30px 0;
+    transition: opacity 0.3s;
+}
+
+.btn-cta:hover {
+    opacity: 0.9;
+}
+
+.hero {
+    min-height: 100vh;
+    background: linear-gradient(rgba(7, 22, 41, 0.4), rgba(7, 22, 41, 0.4)), 
+                url('img/hero-bg.jpg') no-repeat center center/cover; /* Adjusted path */
+    text-align: center;
+    padding-top: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.nav-links {
+    display: none;
+}
+
+.nav-icon {
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+}
+
+.nav-icon span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: var(--color-white);
+    margin: 5px 0;
+}
+
+.hero-content {
+    margin-top: 15vh;
+}
+
+.hero-content h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.hero-content .hero-subtitle {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.hero-description {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .nav-icon {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+    }
+
+    .nav-links a {
+        color: var(--color-white);
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .hero-content h1 {
+        font-size: 48px;
+    }
+
+    .hero-description {
+        max-width: 600px;
+        margin: 40px auto;
+    }
+}
+
+/* WHAT WE DO SECTION */
+.what-we-do {
+    padding: 80px 0;
+    background-color: var(--color-dark); /* Using dark background for contrast */
+    text-align: center;
+}
+
+.what-we-do .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.what-we-do h1 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: var(--color-white);
+}
+
+.what-we-do-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+}
+
+.what-we-do-item {
+    flex: 1 1 250px; /* Flex grow, shrink, and basis */
+    max-width: 300px;
+    padding: 20px;
+    color: var(--color-white);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition for hover effects */
+}
+
+.what-we-do-item:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.what-we-do-item .holberton_school-icon {
+    font-size: 60px; /* Size of the icon */
+    color: var(--color-primary); /* Color of the icon */
+    margin-bottom: 20px;
+    display: inline-block; /* Ensure display as block for sizing */
+}
+
+.what-we-do-item h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: var(--color-white);
+}
+
+.what-we-do-item p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7); /* Slightly transparent text */
+}
+
+/* OUR RESULTS SECTION */
+.our-results {
+    padding: 80px 0;
+    background-color: var(--color-white); /* Light background */
+    color: var(--color-dark); /* Dark text */
+    text-align: center;
+}
+
+.our-results h1 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: var(--color-dark);
+}
+
+.our-results-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid */
+    gap: 40px;
+    width: 100%;
+}
+
+.result-item {
+    background-color: var(--color-white); /* White background for items if needed, or transparent */
+    padding: 20px;
+    border-radius: 8px; /* Optional: slight rounding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    display: flex; /* Use flexbox for better alignment */
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Distribute space */
+}
+
+.result-item img { /* This image styling will be removed/replaced */
+    display: none; /* Hide the original images */
+}
+
+.result-item h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: var(--color-dark);
+}
+
+.result-item p {
+    font-size: 14px;
+    color: rgba(7, 22, 41, 0.7); /* Darker text with some transparency */
+}
+
+/* STYLES FOR DRAWING PENTAGONS */
+.pentagon-shape {
+    width: 100px; /* Example size */
+    height: 100px; /* Example size */
+    background-color: var(--color-primary); /* Color for the pentagon */
+    margin: 20px auto; /* Center the pentagon within the item */
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition for hover effects */
+}
+
+.result-item:hover .pentagon-shape { /* Apply hover effect to pentagon when item is hovered */
+    transform: scale(1.1) rotate(5deg); /* Scale up and rotate */
+    box-shadow: 0 0 15px var(--color-primary); /* Add glow effect */
+}
+
+.result-item h3, .result-item p {
+    margin-top: 15px; /* Add some space above text */
+}
+
+/* Responsive adjustments for images if needed */
+@media (max-width: 768px) {
+    .our-results-items {
+        grid-template-columns: 1fr; /* Stack items on smaller screens */
+    }
+}
+
+/* CONTACT US SECTION */
+.contact-us {
+    padding: 80px 0;
+    background-color: var(--color-dark); /* Dark background */
+    color: var(--color-white);
+    text-align: center;
+}
+
+.contact-us h1 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: var(--color-white);
+}
+
+.contact-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.05); /* Slightly lighter dark background for form */
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left; /* Align labels and inputs to the left */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--color-white);
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1); /* Input field background */
+    color: var(--color-white);
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(255, 85, 94, 0.3); /* Focus indicator */
+}
+
+.contact-us .btn-cta {
+    width: 100%; /* Make button full width */
+    margin-top: 20px;
+}
+
+/* Hover animation for button if not already handled by btn-cta */
+.contact-us .btn-cta:hover {
+    opacity: 1; /* Override default hover opacity if needed for consistency */
+    background-color: #e64a51; /* Darker shade on hover */
+}
+
+/* FOOTER SECTION */
+footer {
+    background-color: var(--color-dark);
+    color: rgba(255, 255, 255, 0.7);
+    padding: 60px 0 20px 0; /* More padding at top, less at bottom for copyright */
+    text-align: center;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.footer-logo,
+.footer-nav,
+.footer-social {
+    flex: 1 1 200px; /* Grow, shrink, basis */
+    text-align: center; /* Center content within flex item */
+}
+
+.footer-logo img {
+    max-width: 150px; /* Adjust logo size */
+    height: auto;
+}
+
+.footer-content h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: var(--color-white);
+    font-weight: bold;
+}
+
+.footer-nav ul,
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-nav ul li,
+.footer-social ul li {
+    margin-bottom: 10px;
+}
+
+.footer-nav a,
+.footer-social a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover,
+.footer-social a:hover {
+    color: var(--color-primary);
+}
+
+.footer-social .holberton_school-icon {
+    font-size: 24px; /* Size of social icons */
+    color: rgba(255, 255, 255, 0.7); /* Initial color */
+}
+
+.footer-social a:hover .holberton_school-icon {
+    color: var(--color-primary);
+}
+
+.footer-copyright {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Separator line */
+}
+
+/* Responsive adjustments for footer */
+@media (min-width: 768px) {
+    footer .container {
+        flex-direction: row; /* Arrange items horizontally on larger screens */
+        justify-content: space-between; /* Distribute space */
+        align-items: flex-start; /* Align items to the top */
+    }
+
+    .footer-content {
+        flex-direction: row; /* Arrange columns horizontally */
+        justify-content: space-between;
+        align-items: flex-start;
+        text-align: left; /* Align text to the left */
+    }
+
+    .footer-logo,
+    .footer-nav,
+    .footer-social {
+        flex: 1; /* Distribute space equally */
+        text-align: left; /* Align text to the left */
+    }
+
+    .footer-logo {
+        flex-basis: auto; /* Let it take content width */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-content {
+        flex-direction: column; /* Stack items vertically on very small screens */
+        align-items: center;
+    }
+    .footer-nav ul, .footer-social ul {
+        padding-left: 0; /* Reset padding if any */
+    }
+    .footer-nav li, .footer-social li {
+        margin-bottom: 15px;
+    }
+}
